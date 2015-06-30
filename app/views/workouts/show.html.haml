@@ -1,8 +1,11 @@
 #workout
-	%p= @workout.date
-	%p= @workout.workout
-	%p= @workout.mood
-	%p= @workout.length
+	%h2= @workout.date.strftime("%A %B %d")
+	%h4 Workout
+	%li= @workout.workout
+	%h4 Mood
+	%li= @workout.mood
+	%h4 Length
+	%li= @workout.length
 
 #exercises
 	%h2 Exercises
